@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
+@plugin "daisyui/theme" {
+  name: "chicken-stall";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: oklch(98% 0.01 60);
+  --color-base-200: oklch(95% 0.02 60);
+  --color-base-300: oklch(92% 0.03 60);
+  --color-base-content: oklch(25% 0.05 60);
+
+  --color-primary: oklch(45% 0.15 35);
+  --color-primary-content: oklch(98% 0.01 60);
+  --color-secondary: oklch(55% 0.12 45);
+  --color-secondary-content: oklch(98% 0.01 60);
+  --color-accent: oklch(65% 0.15 25);
+  --color-accent-content: oklch(98% 0.01 60);
+
+  --color-neutral: oklch(40% 0.05 60);
+  --color-neutral-content: oklch(98% 0.01 60);
+
+  --color-info: oklch(70% 0.2 220);
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: oklch(65% 0.25 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(80% 0.25 50);
+  --color-warning-content: oklch(20% 0.05 50);
+  --color-error: oklch(65% 0.3 15);
+  --color-error-content: oklch(98% 0.01 15);
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+
+  --depth: 1;
+  --noise: 0;
+}
